@@ -14,3 +14,8 @@ function select(name){
     });
     name.classList.add('select');
 }
+
+function copietxt(){
+    navigator.clipboard.writeText('thomashenry7750@gmail.com').then(()=>
+    alert('Copied!'));
+}
