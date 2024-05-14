@@ -31,7 +31,7 @@ body {
     background: var(--background);
 }
 
-nav {
+header {
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -39,7 +39,7 @@ nav {
     transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
-nav>ul {
+header>ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -167,11 +167,11 @@ h1 {
 
 /*A PROPOS*/
 
-#sec-propos {
-    margin-top: 2rem;
+.sec-propos {
+    padding-top: 10rem;
 }
 
-#sec-propos article h2{
+.sec-propos article h2 {
     font-weight: 600;
 }
 
@@ -186,7 +186,7 @@ h1 {
     text-align: justify;
 }
 
-#container-propos-txt p:last-child{
+#container-propos-txt p:last-child {
     margin-top: 0.75rem;
 }
 
@@ -194,23 +194,23 @@ h1 {
 
 /*competence*/
 
-#container-competence{
+#container-competence {
     margin-top: 4rem;
 }
 
-h3{
+h3 {
     text-align: center;
     color: var(--title-color);
     font-weight: 500;
     font-size: 2.25rem;
 }
 
-.container-lang{
+.container-lang {
     width: 75%;
     margin: 2rem auto 0 auto;
 }
 
-.container-lang h4{
+.container-lang h4 {
     color: var(--title-color);
     font-weight: 400;
     font-size: 1.9rem;
@@ -218,7 +218,7 @@ h3{
     flex-direction: column;
 }
 
-.sub-container-comp{
+.sub-container-comp {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -226,7 +226,7 @@ h3{
     margin-top: 1.75rem;
 }
 
-.card-lang{
+.card-lang {
     border: #575757 2.5px solid;
     border-radius: 1rem;
     width: 15%;
@@ -238,18 +238,196 @@ h3{
     transition: border-color 250ms ease-in-out;
 }
 
-.card-lang:hover{
+.card-lang:hover {
     border-color: var(--text-color);
 }
 
-.card-lang img{
+.card-lang img {
     max-width: 60%;
 }
 
-.card-lang p{
+.card-lang p {
     margin-top: 1rem;
     font-size: 1.25rem;
     color: var(--text-color);
 }
 
 /*competence*/
+
+/*projet*/
+
+.sec-projets {
+    padding-top: 10rem;
+    font-weight: 600;
+}
+
+.container-proj {
+    width: 90%;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-proj {
+    width: 22%;
+    color: var(--text-color);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-img-proj {
+    border-radius: 1.5rem;
+    border: #575757 2.5px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 15rem;
+    transition: border-color 250ms ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-img-proj::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1.5rem;
+    right: -101%;
+    background: rgba(11, 13, 12, 0.911);
+    transition: transform 250ms ease-in-out;
+}
+
+.container-img-proj:hover::after {
+    transform: translate(-101%, 0);
+}
+
+.container-img-proj img {
+    max-width: 75%;
+    max-height: 100%;
+    user-select: none;
+}
+
+.card-proj p {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 0.75rem;
+}
+
+.container-img-proj:hover {
+    border-color: var(--text-color);
+}
+
+#acdc,
+#xspace {
+    background: #000;
+}
+
+#univ,
+#doulenne {
+    background: #F0E9E2;
+}
+
+#aero-club {
+    background: #407BA7;
+}
+
+#formulut {
+    background: #FFD911;
+}
+
+#sushi-taimu {
+    background: #E4D3BE;
+}
+
+#moai {
+    background: #0077BE;
+}
+
+#sushi-taimu:hover::before,
+#univ:hover::before,
+#aero-club:hover::before {
+    opacity: 1;
+}
+
+#sushi-taimu::before,
+#univ::before,
+#aero-club::before {
+    content: 'Site web de réservation';
+    position: absolute;
+    z-index: 90;
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: opacity 300ms cubic-bezier(.75, 0, .75, 0);
+    text-align: center;
+}
+
+#doulenne:hover::before,
+#xspace:hover::before {
+    opacity: 1;
+}
+
+#doulenne::before,
+#xspace::before {
+    content: 'Site web vitrine';
+    position: absolute;
+    z-index: 90;
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: opacity 300ms cubic-bezier(.75, 0, .75, 0);
+    text-align: center;
+}
+
+#formulut:hover::before {
+    opacity: 1;
+}
+
+#formulut::before {
+    content: 'Webdocumentaire';
+    position: absolute;
+    z-index: 90;
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: opacity 300ms cubic-bezier(.75, 0, .75, 0);
+    text-align: center;
+}
+
+#acdc:hover::before {
+    opacity: 1;
+}
+
+#acdc::before {
+    content: 'Site web sur un groupe de musique';
+    position: absolute;
+    z-index: 90;
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: opacity 300ms cubic-bezier(.75, 0, .75, 0);
+    text-align: center;
+}
+
+#moai:hover::before {
+    opacity: 1;
+}
+
+#moai::before {
+    content: 'Site web avec un modèle 3D';
+    position: absolute;
+    z-index: 90;
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: opacity 300ms cubic-bezier(.75, 0, .75, 0);
+    text-align: center;
+}
+
+/*projet*/

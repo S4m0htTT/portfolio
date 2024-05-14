@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav id="header">
+    <header id="header">
         <ul>
             <li>
                 <div class="container-nav-btn">
@@ -19,12 +19,12 @@
             </li>
             <li>
                 <div class="container-nav-btn">
-                    <a onclick="select(propos)" id="propos"  class="nav-btn" href="#">À propos</a>
+                    <a onclick="select(propos)" id="propos"  class="nav-btn" href="#Apropos">À propos</a>
                 </div>
             </li>
             <li>
                 <div class="container-nav-btn">
-                    <a onclick="select(projet)" id="projet"  class="nav-btn" href="#">Projets</a>
+                    <a onclick="select(projet)" id="projet"  class="nav-btn" href="#projets">Projets</a>
                 </div>
             </li>
             <li>
@@ -33,7 +33,7 @@
                 </div>
             </li>
         </ul>
-    </nav>
+    </header>
     <section id="main-sec">
         <article id="main-sec-filter">
             <div id="main-sec-gradient"></div>
@@ -44,7 +44,7 @@
             <p onclick="copietxt()">Me contacter</p>
         </article>
     </section>
-    <section id="sec-propos">
+    <section class="sec-propos" id="Apropos">
         <article>
             <h2>À propos</h2>
             <div id="container-propos-txt">
@@ -103,6 +103,61 @@
                         <p>NodeJS</p>
                     </div>
                 </div>
+            </div>
+        </article>
+    </section>
+    <section class="sec-projets" id="projets">
+        <h2>Projets</h2>
+        <article class="container-proj">
+            <div class="card-proj">
+                <div class="container-img-proj" id="sushi-taimu">
+                    <img src="img/Logo_Sushi_Taimu.svg" alt="logo Sushi Taimu">
+                </div>
+                <p>Sushi Taimu</p>
+            </div>
+            <div class="card-proj">
+                <div class="container-img-proj" id="moai">
+                    <img src="img/moai.png" alt="logo Moai">
+                </div>
+                <p>Carte de la Culture</p>
+            </div>
+            <div class="card-proj">
+                <div class="container-img-proj" id="aero-club">
+                    <img src="img/logo_aero.png" alt="logo Aero club">
+                </div>
+                <p>ACF2L</p>
+            </div>
+            <div class="card-proj">
+                <div class="container-img-proj" id="formulut">
+                    <img src="img/icon_formul_UT.png" alt="logo formul_UT">
+                </div>
+                <p>Formul'UT</p>
+            </div>
+        </article>
+        <article class="container-proj">
+            <div class="card-proj">
+                <div class="container-img-proj" id="doulenne">
+                    <img src="img/logo.png" alt="logo Doulenne">
+                </div>
+                <p>Doulenne</p>
+            </div>
+            <div class="card-proj">
+                <div class="container-img-proj" id="univ">
+                    <img src="img/logo univ.png" alt="logo univ">
+                </div>
+                <p>IUT Eiffel</p>
+            </div>
+            <div class="card-proj">
+                <div class="container-img-proj" id="xspace">
+                    <img src="img/xspace.png" alt="logo XSpace">
+                </div>
+                <p>XSpace</p>
+            </div>
+            <div class="card-proj">
+                <div class="container-img-proj" id="acdc">
+                    <img src="img/acdc.svg" alt="logo ACDC">
+                </div>
+                <p>ACDC</p>
             </div>
         </article>
     </section>
