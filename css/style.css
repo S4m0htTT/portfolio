@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,7 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     font-family: "Poppins", sans-serif;
@@ -16,7 +17,7 @@ html, body {
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --background: #0B0D0C;
     --title-color: #E4DAD0;
     --text-color: #F0E9E2;
@@ -25,7 +26,7 @@ html, body {
 
 /*HEADER*/
 
-.bg-black{
+.bg-black {
     box-shadow: 0px 0px 25px 0px var(--title-color);
     background: var(--background);
 }
@@ -38,7 +39,7 @@ nav {
     transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -47,11 +48,11 @@ nav > ul{
     margin: 0 auto;
 }
 
-.container-nav-btn{
+.container-nav-btn {
     position: relative;
 }
 
-.nav-btn{
+.nav-btn {
     color: var(--title-color);
     text-decoration: none;
     font-size: 1.5rem;
@@ -59,7 +60,7 @@ nav > ul{
     overflow: hidden;
 }
 
-.nav-btn::after{
+.nav-btn::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -68,16 +69,16 @@ nav > ul{
     height: 0.1rem;
     background: var(--title-color);
     opacity: 0;
-    transition: opacity 250ms, transform 250ms ;
+    transition: opacity 250ms, transform 250ms;
 }
 
 .nav-btn:hover::after,
-.nav-btn:focus::after{
+.nav-btn:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2rem, 0);
 }
 
-.select::after{
+.select::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -86,11 +87,11 @@ nav > ul{
     height: 0.1rem;
     background: var(--title-color);
     opacity: 1;
-    transition: opacity 250ms, transform 250ms ;
+    transition: opacity 250ms, transform 250ms;
 }
 
 .select:hover::after,
-.select:focus::after{
+.select:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2rem, 0);
 }
@@ -99,7 +100,7 @@ nav > ul{
 
 /*MAIN SECTION*/
 
-#main-sec{
+#main-sec {
     width: 100%;
     height: 100vh;
     background-image: url('../img/beautiful-mountains-landscape.jpg');
@@ -107,14 +108,14 @@ nav > ul{
     position: relative;
 }
 
-#main-sec-filter{
+#main-sec-filter {
     width: 100%;
     height: 100%;
     background: rgba(11, 13, 12, 55%);
     position: relative;
 }
 
-#main-sec-gradient{
+#main-sec-gradient {
     position: absolute;
     left: 0%;
     top: 77.8%;
@@ -123,7 +124,7 @@ nav > ul{
     background: linear-gradient(to bottom, rgba(11, 13, 12, 0%) 0%, rgba(11, 13, 12, 100%) 90%);
 }
 
-#main-sec-content{
+#main-sec-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -136,12 +137,14 @@ nav > ul{
     color: var(--title-color);
 }
 
-h2{
+h2 {
     font-weight: 400;
     font-size: 3rem;
+    color: var(--title-color);
+    text-align: center;
 }
 
-h1{
+h1 {
     font-weight: 600;
     font-size: 5rem;
 }
@@ -156,8 +159,97 @@ h1{
     cursor: pointer;
 }
 
-#main-sec-content p:hover{
+#main-sec-content p:hover {
     background: #0D7377;
 }
 
 /*MAIN SECTION*/
+
+/*A PROPOS*/
+
+#sec-propos {
+    margin-top: 2rem;
+}
+
+#sec-propos article h2{
+    font-weight: 600;
+}
+
+#container-propos-txt {
+    width: 75%;
+    color: var(--text-color);
+    margin: 4rem auto 0 auto;
+    font-size: 1.3rem;
+}
+
+#container-propos-txt p {
+    text-align: justify;
+}
+
+#container-propos-txt p:last-child{
+    margin-top: 0.75rem;
+}
+
+/*A PROPOS*/
+
+/*competence*/
+
+#container-competence{
+    margin-top: 4rem;
+}
+
+h3{
+    text-align: center;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+
+.container-lang{
+    width: 75%;
+    margin: 2rem auto 0 auto;
+}
+
+.container-lang h4{
+    color: var(--title-color);
+    font-weight: 400;
+    font-size: 1.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container-comp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.75rem;
+}
+
+.card-lang{
+    border: #575757 2.5px solid;
+    border-radius: 1rem;
+    width: 15%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: border-color 250ms ease-in-out;
+}
+
+.card-lang:hover{
+    border-color: var(--text-color);
+}
+
+.card-lang img{
+    max-width: 60%;
+}
+
+.card-lang p{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+/*competence*/
