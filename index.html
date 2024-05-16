@@ -19,17 +19,17 @@
             </li>
             <li>
                 <div class="container-nav-btn">
-                    <a onclick="select(propos)" id="propos"  class="nav-btn" href="#Apropos">À propos</a>
+                    <a onclick="select(propos)" id="propos" class="nav-btn" href="#Apropos">À propos</a>
                 </div>
             </li>
             <li>
                 <div class="container-nav-btn">
-                    <a onclick="select(projet)" id="projet"  class="nav-btn" href="#projets">Projets</a>
+                    <a onclick="select(projet)" id="projet" class="nav-btn" href="#projets">Projets</a>
                 </div>
             </li>
             <li>
                 <div class="container-nav-btn">
-                    <a onclick="select(contact)" id="contact" class="nav-btn" href="#">Contact</a>
+                    <a onclick="select(contactBtn)" id="contactBtn" class="nav-btn" href="#contact">Contact</a>
                 </div>
             </li>
         </ul>
@@ -48,8 +48,11 @@
         <article>
             <h2>À propos</h2>
             <div id="container-propos-txt">
-                <p>Actuellement en deuxième année de BUT MMI avec une spécialisation en développement de sites web, je possède les compétences nécessaires pour créer des sites tant statiques que dynamiques. </p>
-                <p>Ma passion pour la programmation et la création de sites web remonte à mon entrée au lycée. Je cherche toujours à en apprendre davantage et à me tenir informé des dernières avancées dans ces domaines.</p>
+                <p>Actuellement en deuxième année de BUT MMI avec une spécialisation en développement de sites web, je
+                    possède les compétences nécessaires pour créer des sites tant statiques que dynamiques. </p>
+                <p>Ma passion pour la programmation et la création de sites web remonte à mon entrée au lycée. Je
+                    cherche toujours à en apprendre davantage et à me tenir informé des dernières avancées dans ces
+                    domaines.</p>
             </div>
         </article>
         <article id="container-competence">
@@ -161,13 +164,32 @@
             </div>
         </article>
     </section>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
+    <section class="sec-contact" id="contact">
+        <h2>Contact</h2>
+        <article id="container-contact">
+            <a href="https://www.linkedin.com/in/thomas-henry-8a9652256/" class="card-contact" target="_blank">
+                <img src="img/icon/linkedin.svg" alt="logo linkedin">
+                <h4>LinkedIn</h4>
+            </a>
+            <div onclick="copietxt()" class="card-contact">
+                <img src="img/icon/mail.svg" alt="mail logo">
+                <h4>Mail</h4>
+                <p>thomashenry7750@gmail.com</p>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <a href="https://github.com/S4m0htTT" target="_blank">
+                <img src="img/icon/github.svg" alt="github logo">
+                <p>Github</p>
+            </a>
+        </div>
+        <p>© Thomas Henry - 2024</p>
+    </footer>
+    <div id="popup-mail">
+        <p>L'adresse mail a été copier dans le presse papier.</p>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
