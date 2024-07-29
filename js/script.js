@@ -45,7 +45,7 @@ function copietxt() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
     var links = document.querySelectorAll('.nav-btn');
     links.forEach(link => {
         link.classList.remove('select');
