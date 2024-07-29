@@ -19,6 +19,26 @@ function copietxt() {
     let popup = document.getElementById('popup-mail');
     navigator.clipboard.writeText('thomashenry7750@gmail.com')
     popup.style.display = 'block';
+    var i = 0;
+    function move() {
+        if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var width = 2;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                    i = 0;
+                } else {
+                    width += 0.2;
+                    elem.style.width = width + "%";
+                    console.log("width=" + elem.style.width)
+                }
+            }
+        }
+    }
+    move()
     setTimeout(() => {
         popup.style.display = 'none';
     }, 5000);
@@ -37,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById('projet').classList.add('select');
     } else if (hash == '#contact') {
         document.getElementById('contactBtn').classList.add('select');
-    }else{
+    } else {
         document.getElementById('accueil').classList.add('select');
     }
 });

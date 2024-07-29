@@ -562,9 +562,24 @@ footer a p{
     top: 7.5%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0.5rem 2rem;
     border-radius: 1rem;
     border: #575757 2.5px solid;
     user-select: none;
     display: none;
+}
+
+/*footer*/
+
+#myProgress {
+    margin-top: 0.5rem;
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 0%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #00ADB5;
 }
