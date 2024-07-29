@@ -265,6 +265,7 @@ h3 {
     justify-content: space-around;
     align-items: center;
     transition: border-color 250ms ease-in-out;
+    margin-bottom: 1.5rem;
 }
 
 .card-lang:hover {

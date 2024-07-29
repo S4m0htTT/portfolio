@@ -1,3 +1,8 @@
+let FrontContainer = document.getElementById("FrontContainer");
+let backContainer = document.getElementById("BackContainer");
+
+
+
 var nav = document.getElementById('header');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
@@ -62,18 +67,54 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function fetchJSONData(path) {
-    fetch(path)
-        .then((res) => {
-            if (!res.ok) {
-                throw new Error
-                    (`HTTP error! Status: ${res.status}`);
-            }
-            return res.json();
-        })
-        .then((data) => 
-              console.log(data))
-        .catch((error) => 
-               console.error("Unable to fetch data:", error));
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
 }
-fetchJSONData("./projet.json");
+
+//usage:
+readTextFile("./langProg.json", function (text) {
+    var dataLang = JSON.parse(text);
+    let front = dataLang['Frontend'],
+        back = dataLang['Backend'];
+    front = Object.keys(dataLang['Frontend']).map((key) => [key, dataLang['Frontend'][key]]);
+    back = Object.keys(dataLang['Backend']).map((key) => [key, dataLang['Backend'][key]]);
+
+    front.forEach(element => {
+        let langs = Object.keys(element[1]).map((key) => [key, element[1][key]]);
+        langs.forEach(lang => {
+            let div = document.createElement('div');
+            div.className ='card-lang';
+            let img = document.createElement('img');
+            img.src = lang[1]['img'];
+            div.appendChild(img);
+            let p = document.createElement('p');
+            p.textContent = lang[1]['name'];
+            div.appendChild(p);
+            FrontContainer.appendChild(div);
+        });
+    });
+    
+    back.forEach(element =>{
+        let langs = Object.keys(element[1]).map((key) => [key, element[1][key]]);
+        langs.forEach(lang => {
+            let div = document.createElement('div');
+            div.className ='card-lang';
+            let img = document.createElement('img');
+            img.src = lang[1]['img'];
+            div.appendChild(img);
+            let p = document.createElement('p');
+            p.textContent = lang[1]['name'];
+            div.appendChild(p);
+            backContainer.appendChild(div);
+        });
+    });
+});
+
