@@ -1,0 +1,30 @@
+{
+    "Frontend": {
+        "html": [
+            {
+                "name": "HTML",
+                "img": "./img/logo/html.svg"
+            }
+        ],
+        "CSS": [
+            {
+                "name": "CSS",
+                "img": "./img/logo/css.svg"
+            }
+        ]
+    },
+    "Backend": {
+        "PHP" : [
+            {
+                "name": "PHP",
+                "img": "./img/logo/php.svg"
+            }
+        ],
+        "Python": [
+            {
+                "name": "Python",
+                "img": "./img/logo/python.svg"
+            }
+        ]
+    }
+}

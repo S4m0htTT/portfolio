@@ -62,8 +62,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function fetchJSONData() {
-    fetch("./projet.json")
+function fetchJSONData(path) {
+    fetch(path)
         .then((res) => {
             if (!res.ok) {
                 throw new Error
@@ -76,4 +76,4 @@ function fetchJSONData() {
         .catch((error) => 
                console.error("Unable to fetch data:", error));
 }
-// fetchJSONData();
+fetchJSONData("./projet.json");
