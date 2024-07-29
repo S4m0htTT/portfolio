@@ -1,7 +1,12 @@
 let FrontContainer = document.getElementById("FrontContainer");
 let backContainer = document.getElementById("BackContainer");
-
-
+let burgerMenu = document.getElementById("burgerMenu");
+let menuTel = document.getElementById("menuTel");
+let boolMenuTel = false;
+let accueilTel = document.getElementById("accueil-tel"),
+    aproposTel = document.getElementById("propos-tel"),
+    projetTel = document.getElementById("projet-tel"),
+    contactTel = document.getElementById("contactBtn-tel");
 
 var nav = document.getElementById('header');
 window.addEventListener('scroll', () => {
@@ -38,7 +43,6 @@ function copietxt() {
                 } else {
                     width += 0.2;
                     elem.style.width = width + "%";
-                    console.log("width=" + elem.style.width)
                 }
             }
         }
@@ -101,7 +105,7 @@ readTextFile("./langProg.json", function (text) {
             FrontContainer.appendChild(div);
         });
     });
-    
+
     back.forEach(element =>{
         let langs = Object.keys(element[1]).map((key) => [key, element[1][key]]);
         langs.forEach(lang => {
@@ -118,3 +122,32 @@ readTextFile("./langProg.json", function (text) {
     });
 });
 
+burgerMenu.addEventListener('click', _ => {
+    if (boolMenuTel){
+        menuTel.style.display = 'none';
+        boolMenuTel = false;
+    }else{
+        menuTel.style.display = 'flex';
+        boolMenuTel = true;
+    }
+});
+
+accueilTel.addEventListener('click', _ => {
+    menuTel.style.display = 'none';
+    boolMenuTel = false;
+});
+
+aproposTel.addEventListener('click', _ => {
+    menuTel.style.display = 'none';
+    boolMenuTel = false;
+});
+
+projetTel.addEventListener('click', _ => {
+    menuTel.style.display = 'none';
+    boolMenuTel = false;
+});
+
+contactTel.addEventListener('click', _ => {
+    menuTel.style.display = 'none';
+    boolMenuTel = false;
+});
