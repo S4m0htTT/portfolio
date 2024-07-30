@@ -158,14 +158,38 @@ let textLoader = document.getElementById('textLoader');
 document.body.style.overflow = 'hidden';
 
 document.addEventListener('DOMContentLoaded', _ => {
-    setTimeout(_ => {
+    if (document.cookie == ''){
+        setTimeout(_ => {
+            textLoader.style.animation = 'none';
+            textLoader.style.opacity = '0';
+            imgLoader.style.opacity = '0';
+            setTimeout(_ => {
+                loader.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                document.cookie = 'loading';
+            }, 1000)
+        }, 2000);
+    } else {
         textLoader.style.animation = 'none';
         textLoader.style.opacity = '0';
         imgLoader.style.opacity = '0';
-        setTimeout(_=>{
-            loader.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        },1000)
-    }, 2000);
+        loader.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
 });
 
+if (document.cookie != ''){
+    textLoader.style.animation = 'none';
+    textLoader.style.opacity = '0';
+    imgLoader.style.opacity = '0';
+    loader.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+let projets = document.querySelectorAll('.card-proj');
+projets.forEach((projet) => {
+    projet.style.cursor = 'pointer';
+    projet.addEventListener('click', _ => {
+        window.location.href = "./projet.html?name=" + projet.children[1].textContent;
+    });
+})
