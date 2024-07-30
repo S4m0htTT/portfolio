@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', _ => {
                     document.body.style.overflow = 'auto';
                     document.cookie = 'loading';
                 }, 1000)
-            }, 2000);
+            }, 3000);
         } else {
             textLoader.style.animation = 'none';
             textLoader.style.opacity = '0';

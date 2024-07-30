@@ -82,7 +82,7 @@ header>ul {
 }
 
 .nav-btn {
-    color: var(--title-color);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1.5rem;
     display: block;
@@ -96,7 +96,7 @@ header>ul {
     left: 0;
     width: 100%;
     height: 0.1rem;
-    background: var(--title-color);
+    background: var(--text-color);
     opacity: 0;
     transition: opacity 250ms, transform 250ms;
 }
@@ -114,7 +114,7 @@ header>ul {
     left: 0;
     width: 100%;
     height: 0.1rem;
-    background: var(--title-color);
+    background: var(--text-color);
     opacity: 1;
     transition: opacity 250ms, transform 250ms;
 }
