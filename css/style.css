@@ -330,7 +330,7 @@ h3 {
     width: 100%;
     height: 100%;
     position: absolute;
-    border-radius: 1.5rem;
+    border-radius: 0rem;
     right: -101%;
     background: rgba(11, 13, 12, 0.911);
     transition: transform 250ms ease-in-out;

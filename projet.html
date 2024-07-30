@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon/icon.png">
+    <link rel="stylesheet" href="css/projet.css">
     <title>Projet - </title>
 </head>
 <body>
-    <a href="index.html#projets">Retour</a>
+    <header id="header">
+        <ul>
+            <li>
+                <div class="container-nav-btn">
+                    <a onclick="select(accueil)" id="accueil" class="nav-btn select" href="index.html">Accueil</a>
+                </div>
+            </li>
+            <li>
+                <div class="container-nav-btn">
+                    <a onclick="select(propos)" id="propos" class="nav-btn" href="index.html#Apropos">À propos</a>
+                </div>
+            </li>
+            <li>
+                <div class="container-nav-btn">
+                    <a onclick="select(projet)" id="projet" class="nav-btn" href="index.html#projets">Projets</a>
+                </div>
+            </li>
+            <li>
+                <div class="container-nav-btn">
+                    <a onclick="select(contactBtn)" id="contactBtn" class="nav-btn" href="index.html#contact">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <header id="headerTel">
+        <img id="burgerMenu" src="./img/icon/burgerMenu.svg" alt="burgerMenu">
+    </header>
+    <section id="menuTel">
+        <a id="accueil-tel" class="nav-btn-tel" href="#">Accueil</a>
+        <a id="propos-tel" class="nav-btn-tel" href="#Apropos">À propos</a>
+        <a id="projet-tel" class="nav-btn-tel" href="#projets">Projets</a>
+        <a id="contactBtn-tel" class="nav-btn-tel" href="#contact">Contact</a>
+    </section>
+    <section id="container-info">
+        <span>
+            <img src="./img/icon/arrow.svg" alt="left arrow">
+            <a href="index.html#projets">Retour</a>
+        </span>
+        <artcile id="sub-container-info">
+            
+        </artcile>
+        <artcile id="container-img">
+
+        </artcile>
+    </section>
+    
     <script src="./js/projet.js"></script>
 </body>
 </html>
