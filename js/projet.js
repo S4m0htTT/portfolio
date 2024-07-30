@@ -14,7 +14,7 @@ function $_GET(param) {
     }
 }
 const projetName = decodeURI($_GET()['name']);
-let description, img, url;
+let description, img, url, langage;
 
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -37,6 +37,7 @@ readTextFile("./projets.json", function(text) {
             infoProjet.forEach(info => {
                 description = info[1]['description'];
                 url = info[1]['url'];
+                langage = info[1]['languages'];
                 img = Object.keys(info[1]['img']).map((key) => [key, info[1]['img'][key]]);
                 img = img[0][1]
                 img = Object.keys(img).map((key) => [key, img[key]]);
@@ -68,6 +69,11 @@ readTextFile("./projets.json", function(text) {
                 imgtxt.innerHTML = img[1]
                 document.body.appendChild(imgtxt)
             });
+        }
+        if (langage!= null) {
+            h1 = document.createElement('h2')
+            h1.innerHTML = "langage : " + langage
+            document.body.appendChild(h1)
         }
     }
 });

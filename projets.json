@@ -1,119 +1,128 @@
 {
-    "IUT Eiffel" : [
+    "IUT Eiffel": [
         {
-            "name" : "Eiffel",
-            "description" : "nvjsgvljsnlsjgisiglsngisjr,nigkjrsiglkrs",
-            "img" : [
+            "name": "Eiffel",
+            "description": "nvjsgvljsnlsjgisiglsngisjr,nigkjrsiglkrs",
+            "img": [
                 {
-                    "1" : "eaezae",
-                    "2" : "vbgb"
+                    "1": "eaezae",
+                    "2": "vbgb"
                 }
             ],
-            "url" : "https://github.com/Glenn-Guillard-MMI/SAE203"
+            "url": "https://github.com/Glenn-Guillard-MMI/SAE203",
+            "languages" : "HTML, CSS, JavaScript, PHP, SQl"
         }
     ],
-    "Sushi Taimu" : [
+    "Sushi Taimu": [
         {
-            "name" : "Sushi Taimu",
-            "description" : "<a href='https://github.com/S4m0htTT/Sushi-Taimu-Admin' target='_blank'>GitHub de la partie Admin</a>",
-            "img" : [
+            "name": "Sushi Taimu",
+            "description": "<a href='https://github.com/S4m0htTT/Sushi-Taimu-Admin' target='_blank'>GitHub de la partie Admin</a>",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : "https://github.com/Glenn-Guillard-MMI/Sushi-Taimu"
+            "url": "https://github.com/Glenn-Guillard-MMI/Sushi-Taimu",
+            "languages" : "HTML, CSS, JavaScript, Angular, NodeJS, SQL, PHP"
         }
     ],
-    "Doulenne" : [
+    "Doulenne": [
         {
-            "name" : "Doulenne",
-            "description" : "hglksm,hisk,gkjolgkr",
-            "img" : [
+            "name": "Doulenne",
+            "description": "hglksm,hisk,gkjolgkr",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : "https://prestations.doulenne.fr/"
+            "url": "https://prestations.doulenne.fr/",
+            "languages" : "HTML, CSS, JavaScript, PHP"
         }
     ],
-    "Carte de la Culture" : [
+    "Carte de la Culture": [
         {
-            "name" : "Carte de la Culture",
-            "description" : "hglksm,hisk,gkjolgkr",
-            "img" : [
+            "name": "Carte de la Culture",
+            "description": "hglksm,hisk,gkjolgkr",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : "http://3d-projet.glenn-guillard.fr/"
+            "url": "http://3d-projet.glenn-guillard.fr/",
+            "languages" : "HTML, CSS, JavaScript"
         }
     ],
-    "Formul'UT" : [
+    "Formul'UT": [
         {
-            "name" : "Formul'UT",
-            "description" : "hglksm,hisk,gkjolgkr",
-            "img" : [
+            "name": "Formul'UT",
+            "description": "hglksm,hisk,gkjolgkr",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : ""
+            "url": "",
+            "languages" : "HTML, CSS, JavaScript"
         }
     ],
-    "XSpace" : [
+    "XSpace": [
         {
-            "name" : "XSpace",
-            "description" : "hglksm,hisk,gkjolgkr",
-            "img" : [
+            "name": "XSpace",
+            "description": "hglksm,hisk,gkjolgkr",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : ""
+            "url": "",
+            "languages" : "HTML, CSS, JavaScript"
         }
     ],
-    "ACF2L" : [
+    "ACF2L": [
         {
-            "name" : "ACF2L",
-            "description" : "hglksm,hisk,gkjolgkr",
-            "img" : [
+            "name": "ACF2L",
+            "description": "hglksm,hisk,gkjolgkr",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : ""
+            "url": "",
+            "languages" : "HTML, CSS, JavaScript, PHP, SQL"
         }
     ],
-    "ACDC" : [
+    "ACDC": [
         {
-            "name" : "ACDC",
-            "description" : "hglksm,hisk,gkjolgkr",
-            "img" : [
+            "name": "ACDC",
+            "description": "hglksm,hisk,gkjolgkr",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : ""
+            "url": "",
+            "languages" : "HTML, CSS, JavaScript"
         }
     ],
-    "L'Imprimerie" : [
+    "L'Imprimerie": [
         {
-            "name" : "L'Imprimerie",
-            "description" : "hglksm,hisk,gkjolgkr",
-            "img" : [
+            "name": "L'Imprimerie",
+            "description": "hglksm,hisk,gkjolgkr",
+            "img": [
                 {
-                    "1" : "g,dkgnsongfljsoi",
-                    "2" : "fsefsfesfe"
+                    "1": "g,dkgnsongfljsoi",
+                    "2": "fsefsfesfe"
                 }
             ],
-                "url" : ""
+            "url": "",
+            "languages" : "HTML, CSS, JavaScript, PHP, SQL, WLangage (WebDev)"
         }
     ]
 }
