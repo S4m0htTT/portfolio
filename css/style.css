@@ -650,6 +650,7 @@ footer a p {
     .container-img-proj {
         height: 10rem;
     }
+
     .card-lang {
         margin-right: 1.5rem;
     }
@@ -733,64 +734,74 @@ footer a p {
         border-radius: 1rem;
     }
 
-    .container-img-proj img{
+    .container-img-proj::after {
+        border-radius: 0.5rem;
+    }
+
+    .container-img-proj img {
         max-width: 95%;
     }
 
-    .card-lang{
+    .card-lang {
         width: 26%;
     }
 
-    h1{
+    h1 {
         font-size: 3.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 2.5rem;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .card-lang{
+    .card-lang {
         width: 33%;
         margin-right: 1.5rem;
     }
-    
-    .sub-container-comp{
+
+    .sub-container-comp {
         justify-content: space-around;
     }
 
-    .card-proj{
+    .card-proj {
         width: 40%;
     }
 
-    .container-img-proj img{
+    .container-img-proj img {
         max-width: 100%;
     }
-    #container-contact{
+
+    #container-contact {
         flex-direction: column;
     }
-    .card-contact{
+
+    .card-contact {
         width: 50%;
         margin-bottom: 2.5rem;
     }
-    h1{
+
+    h1 {
         font-size: 2.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.75rem;
     }
-    .nav-btn-tel{
+
+    .nav-btn-tel {
         font-size: 3rem;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .card-lang{
+    .card-lang {
         width: 45%;
         margin-right: 0;
     }
 
-    .card-proj{
+    .card-proj {
         width: 85%;
     }
 
@@ -798,11 +809,11 @@ footer a p {
         font-size: 1.5rem;
     }
 
-    .container-img-proj{
+    .container-img-proj {
         height: 12.5rem;
     }
 
-    .card-contact{
+    .card-contact {
         width: 75%;
     }
 
@@ -811,11 +822,11 @@ footer a p {
         margin-top: 1rem;
     }
 
-    .title{
+    .title {
         font-size: 2.75rem;
     }
 
-    footer{
+    footer {
         flex-direction: column;
     }
 
@@ -834,15 +845,17 @@ footer a p {
         width: 85%;
         margin: 0 auto;
     }
-    h1{
+
+    h1 {
         font-size: 2rem;
     }
-    #popup-mail{
+
+    #popup-mail {
         width: 75%;
     }
 }
 
-#loader{
+#loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -851,7 +864,7 @@ footer a p {
     height: 100%;
 }
 
-#loader > img{
+#loader>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -859,7 +872,7 @@ footer a p {
     transition: 1s ease-in-out opacity;
 }
 
-#loader > p {
+#loader>p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -872,4 +885,8 @@ footer a p {
     animation: loader 1s ease-in-out infinite alternate;
 }
 
-@keyframes loader {to{opacity:0.25}}
+@keyframes loader {
+    to {
+        opacity: 0.25
+    }
+}

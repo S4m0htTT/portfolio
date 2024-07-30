@@ -158,17 +158,25 @@ let textLoader = document.getElementById('textLoader');
 document.body.style.overflow = 'hidden';
 
 document.addEventListener('DOMContentLoaded', _ => {
-    if (document.cookie == ''){
-        setTimeout(_ => {
+    if (window.innerWidth > 1024) {
+        if (document.cookie == '') {
+            setTimeout(_ => {
+                textLoader.style.animation = 'none';
+                textLoader.style.opacity = '0';
+                imgLoader.style.opacity = '0';
+                setTimeout(_ => {
+                    loader.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    document.cookie = 'loading';
+                }, 1000)
+            }, 2000);
+        } else {
             textLoader.style.animation = 'none';
             textLoader.style.opacity = '0';
             imgLoader.style.opacity = '0';
-            setTimeout(_ => {
-                loader.style.display = 'none';
-                document.body.style.overflow = 'auto';
-                document.cookie = 'loading';
-            }, 1000)
-        }, 2000);
+            loader.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
     } else {
         textLoader.style.animation = 'none';
         textLoader.style.opacity = '0';
@@ -176,9 +184,10 @@ document.addEventListener('DOMContentLoaded', _ => {
         loader.style.display = 'none';
         document.body.style.overflow = 'auto';
     }
+
 });
 
-if (document.cookie != ''){
+if (document.cookie != '') {
     textLoader.style.animation = 'none';
     textLoader.style.opacity = '0';
     imgLoader.style.opacity = '0';

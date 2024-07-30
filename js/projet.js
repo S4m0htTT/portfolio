@@ -47,6 +47,7 @@ readTextFile("./projets.json", function(text) {
         alert("Project Not Found")
         window.location.href = "./index.html#projets";
     } else {
+        document.title = `Projet - ${projetName}`
         let h1 = document.createElement('h1')
         h1.innerHTML = projetName
         document.body.appendChild(h1)
