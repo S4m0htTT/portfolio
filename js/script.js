@@ -95,7 +95,7 @@ readTextFile("./langProg.json", function (text) {
         let langs = Object.keys(element[1]).map((key) => [key, element[1][key]]);
         langs.forEach(lang => {
             let div = document.createElement('div');
-            div.className ='card-lang';
+            div.className = 'card-lang';
             let img = document.createElement('img');
             img.src = lang[1]['img'];
             div.appendChild(img);
@@ -106,11 +106,11 @@ readTextFile("./langProg.json", function (text) {
         });
     });
 
-    back.forEach(element =>{
+    back.forEach(element => {
         let langs = Object.keys(element[1]).map((key) => [key, element[1][key]]);
         langs.forEach(lang => {
             let div = document.createElement('div');
-            div.className ='card-lang';
+            div.className = 'card-lang';
             let img = document.createElement('img');
             img.src = lang[1]['img'];
             div.appendChild(img);
@@ -123,10 +123,10 @@ readTextFile("./langProg.json", function (text) {
 });
 
 burgerMenu.addEventListener('click', _ => {
-    if (boolMenuTel){
+    if (boolMenuTel) {
         menuTel.style.display = 'none';
         boolMenuTel = false;
-    }else{
+    } else {
         menuTel.style.display = 'flex';
         boolMenuTel = true;
     }
@@ -151,3 +151,21 @@ contactTel.addEventListener('click', _ => {
     menuTel.style.display = 'none';
     boolMenuTel = false;
 });
+
+let loader = document.getElementById('loader');
+let imgLoader = document.getElementById('imgLoader');
+let textLoader = document.getElementById('textLoader');
+document.body.style.overflow = 'hidden';
+
+document.addEventListener('DOMContentLoaded', _ => {
+    setTimeout(_ => {
+        textLoader.style.animation = 'none';
+        textLoader.style.opacity = '0';
+        imgLoader.style.opacity = '0';
+        setTimeout(_=>{
+            loader.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        },1000)
+    }, 2000);
+});
+

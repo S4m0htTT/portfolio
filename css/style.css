@@ -29,7 +29,8 @@ body {
 
 body::-webkit-scrollbar {
     background-color: var(--background);
-    width: 8px;
+    width: 0px;
+    /* width: 8px; */
 }
 
 /* background of the scrollbar except button or resizer */
@@ -840,3 +841,35 @@ footer a p {
         width: 75%;
     }
 }
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+}
+
+#loader > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: 1s ease-in-out opacity;
+}
+
+#loader > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    font-weight: 900;
+    color: var(--text-color);
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    animation: loader 1s ease-in-out infinite alternate;
+}
+
+@keyframes loader {to{opacity:0.25}}
