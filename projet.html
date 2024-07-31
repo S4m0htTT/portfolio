@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/projet.css">
     <title>Projet - </title>
 </head>
+
 <body>
     <header id="header">
         <ul>
@@ -27,7 +29,8 @@
             </li>
             <li>
                 <div class="container-nav-btn">
-                    <a onclick="select(contactBtn)" id="contactBtn" class="nav-btn" href="index.html#contact">Contact</a>
+                    <a onclick="select(contactBtn)" id="contactBtn" class="nav-btn"
+                        href="index.html#contact">Contact</a>
                 </div>
             </li>
         </ul>
@@ -46,14 +49,44 @@
             <img src="./img/icon/arrow.svg" alt="left arrow">
             <a href="index.html#projets">Retour</a>
         </span>
-        <artcile id="sub-container-info">
-            
-        </artcile>
-        <artcile id="container-img">
-
-        </artcile>
+        <div id="sub-container">
+            <article id="sub-container-info">
+                <h1 id="projetTitle"></h1>
+                <p id="description"></p>
+                <p id="language"></p>
+                <h2 id="linkTitle">Lien(s) :</h2>
+                <p id="link"></p>
+            </article>
+            <article id="sub-container-img">
+                <div id="wrapper">
+                    <!-- <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
+                    <input type="radio" name="point" id="slide4">
+                    <input type="radio" name="point" id="slide5">
+                    <input type="radio" name="point" id="slide6"> -->
+                    <div id="slider">
+                        <!-- <div class="slides slide1"></div>
+                        <div class="slides slide2"></div>
+                        <div class="slides slide3"></div>
+                        <div class="slides slide4"></div>
+                        <div class="slides slide5"></div>
+                        <div class="slides slide6"></div> -->
+                    </div>
+                    <div id="controls">
+                        <!-- <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                        <label for="slide5"></label>
+                        <label for="slide6"></label> -->
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
-    
+
     <script src="./js/projet.js"></script>
 </body>
+
 </html>

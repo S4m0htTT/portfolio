@@ -5,26 +5,24 @@
             "description": "nvjsgvljsnlsjgisiglsngisjr,nigkjrsiglkrs",
             "img": [
                 {
-                    "1": "eaezae",
-                    "2": "vbgb"
+                    "1": "./img/projets/iutEiffel/logo.svg"
                 }
             ],
             "url": "https://github.com/Glenn-Guillard-MMI/SAE203",
-            "languages" : "HTML, CSS, JavaScript, PHP, SQl"
+            "languages": "HTML, CSS, JavaScript, PHP, SQl"
         }
     ],
     "Sushi Taimu": [
         {
             "name": "Sushi Taimu",
-            "description": "<a href='https://github.com/S4m0htTT/Sushi-Taimu-Admin' target='_blank'>GitHub de la partie Admin</a>",
+            "description": "<a class='linkDescription' href='https://github.com/S4m0htTT/Sushi-Taimu-Admin' target='_blank'>GitHub de la partie Admin</a>",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/sushiTaimu/logo.svg"
                 }
             ],
             "url": "https://github.com/Glenn-Guillard-MMI/Sushi-Taimu",
-            "languages" : "HTML, CSS, JavaScript, Angular, NodeJS, SQL, PHP"
+            "languages": "HTML, CSS, JavaScript, Angular, NodeJS, SQL, PHP"
         }
     ],
     "Doulenne": [
@@ -33,12 +31,11 @@
             "description": "hglksm,hisk,gkjolgkr",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/doulenne/logo.svg"
                 }
             ],
             "url": "https://prestations.doulenne.fr/",
-            "languages" : "HTML, CSS, JavaScript, PHP"
+            "languages": "HTML, CSS, JavaScript, PHP"
         }
     ],
     "Carte de la Culture": [
@@ -47,12 +44,14 @@
             "description": "hglksm,hisk,gkjolgkr",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/carteCulture/logo.svg",
+                    "2": "./img/projets/carteCulture/carteCultureAccueil.png",
+                    "3": "./img/projets/carteCulture/carteCulture.png",
+                    "4": "./img/projets/carteCulture/modele3d.png"
                 }
             ],
-            "url": "http://3d-projet.glenn-guillard.fr/",
-            "languages" : "HTML, CSS, JavaScript"
+            "url": "<a class='linkURL' href='http://3d-projet.glenn-guillard.fr/' target='_blank'>Carte de la culture</a>",
+            "languages": "HTML, CSS, JavaScript, Blender"
         }
     ],
     "Formul'UT": [
@@ -61,12 +60,11 @@
             "description": "hglksm,hisk,gkjolgkr",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/formulUT/logo.svg"
                 }
             ],
             "url": "",
-            "languages" : "HTML, CSS, JavaScript"
+            "languages": "HTML, CSS, JavaScript"
         }
     ],
     "XSpace": [
@@ -75,12 +73,11 @@
             "description": "hglksm,hisk,gkjolgkr",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/xspace/logo.svg"
                 }
             ],
             "url": "",
-            "languages" : "HTML, CSS, JavaScript"
+            "languages": "HTML, CSS, JavaScript"
         }
     ],
     "ACF2L": [
@@ -89,12 +86,11 @@
             "description": "hglksm,hisk,gkjolgkr",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/ACF2L/logo.svg"
                 }
             ],
             "url": "",
-            "languages" : "HTML, CSS, JavaScript, PHP, SQL"
+            "languages": "HTML, CSS, JavaScript, PHP, SQL"
         }
     ],
     "ACDC": [
@@ -103,26 +99,31 @@
             "description": "hglksm,hisk,gkjolgkr",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/ACDC/logo.svg"
                 }
             ],
             "url": "",
-            "languages" : "HTML, CSS, JavaScript"
+            "languages": "HTML, CSS, JavaScript"
         }
     ],
     "L'Imprimerie": [
         {
             "name": "L'Imprimerie",
-            "description": "hglksm,hisk,gkjolgkr",
+            "description": " Lors d'un stage de 10 semaines à l'Imprimerie, j'ai travaillé sur trois sites web. Le premier, un annuaire, que j'ai réalisé avec WebDev (PC Soft), permet de consulter, ajouter et supprimer des contacts de l'annuaire. Il permet également d'imprimer l'annuaire en fonction de deux critères de tri : alphabétique ou par service. De plus, on peut y consulter le plan d'évacuation de l'entreprise ainsi que des numéros d'urgence, qui peuvent être ajoutés, modifiés ou supprimés. Le second site, Kiosque, existait déjà et est réservé au personnel de l'imprimerie. Ce site, développé en MVC avec PHP, permet de consulter les plannings pour le mois en cours et le mois suivant, ainsi que les plannings de production. Il offre également la possibilité de consulter plusieurs types de rapports. J'ai apporté des modifications fonctionnelles (ajout de nouveaux types de plannings et de rapports) ainsi que des ajustements visuels. Le dernier site, interRepas, a quant à lui seulement reçu des modifications visuelles. Ce site permet au personnel de l'imprimerie de commander leurs repas pour la semaine suivante.",
             "img": [
                 {
-                    "1": "g,dkgnsongfljsoi",
-                    "2": "fsefsfesfe"
+                    "1": "./img/projets/l-imprimerie/logo.svg",
+                    "2": "./img/projets/l-imprimerie/annuaireAccueil.png",
+                    "3": "./img/projets/l-imprimerie/annuaire.png",
+                    "4": "./img/projets/l-imprimerie/kiosqueAdmin.png",
+                    "5": "./img/projets/l-imprimerie/kiosqueAdminPart.png",
+                    "6": "./img/projets/l-imprimerie/kiosqueRapport.png",
+                    "7": "./img/projets/l-imprimerie/interRepas.png",
+                    "8": "./img/projets/l-imprimerie/interRepasListe.png"
                 }
             ],
             "url": "",
-            "languages" : "HTML, CSS, JavaScript, PHP, SQL, WLangage (WebDev)"
+            "languages": "HTML, CSS, JavaScript, PHP, SQL, WLangage (WebDev)"
         }
     ]
 }

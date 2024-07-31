@@ -64,36 +64,53 @@ readTextFile("./projets.json", function (text) {
         }
     });
     if (description == null) {
-        alert("Project Not Found")
+        // alert("Project Not Found")
         window.location.href = "./index.html#projets";
     } else {
         document.title = `Projet - ${projetName}`
-        // let h1 = document.createElement('h1')
-        // h1.innerHTML = projetName
-        // document.body.appendChild(h1)
-        // h1 = document.createElement('h2')
-        // h1.innerHTML = "description : " + description
-        // document.body.appendChild(h1)
-        // if (url != null) {
-        //     h1 = document.createElement('h2')
-        //     h1.innerHTML = "url : " + url
-        //     document.body.appendChild(h1)
-        // }
-        // if (img != null) {
-        //     h1 = document.createElement('h2')
-        //     h1.innerHTML = "img : "
-        //     document.body.appendChild(h1)
-        //     img.forEach(img => {
-        //         let imgtxt = document.createElement('p')
-        //         imgtxt.innerHTML = img[1]
-        //         document.body.appendChild(imgtxt)
-        //     });
-        // }
-        // if (langage!= null) {
-        //     h1 = document.createElement('h2')
-        //     h1.innerHTML = "langage : " + langage
-        //     document.body.appendChild(h1)
-        // }
+        document.getElementById('projetTitle').innerHTML = projetName
+        document.getElementById('description').innerHTML = description
+        if (url != null) {
+            document.getElementById('link').innerHTML = url
+        }
+        if(url == ""){
+            document.getElementById('linkTitle').style.display = 'none'
+        }
+        if (img != null) {
+            let i = 1,
+                wrapper = document.getElementById('wrapper'),
+                slider = document.getElementById('slider'),
+                controls = document.getElementById('controls');
+            img.forEach(img => {
+                let input = document.createElement('input'),
+                    div = document.createElement('div'),
+                    label = document.createElement('label');
+
+                input.type = 'radio';
+                input.name = 'point';
+                input.id = 'slide'+i;
+                if (input.id == 'slide1') {
+                    input.checked = true;
+                }
+                wrapper.insertBefore(input, slider)
+
+                label.htmlFor = input.id;
+                controls.appendChild(label);
+
+                div.classList.add('slides');
+                div.classList.add(input.id);
+                div.style.backgroundImage = `url(${img[1]})`;
+                div.style.backgroundSize = 'contain';
+                div.style.backgroundPosition = 'center';
+                div.style.backgroundRepeat = 'no-repeat';
+                slider.appendChild(div);
+                
+                i++
+            });
+        }
+        if (langage!= null) {
+            document.getElementById('language').innerHTML = langage
+        }
     }
 });
 
@@ -148,3 +165,4 @@ if (document.getElementById('header').offsetHeight == 0) {
 } else {
     document.getElementById('container-info').style.marginTop = document.getElementById('header').offsetHeight + 'px';
 }
+
