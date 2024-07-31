@@ -340,10 +340,10 @@ header>ul {
 #wrapper label {
     cursor: pointer;
     display: inline-block;
-    height: 8px;
+    height: 16px;
     margin: 25px 12px 0 16px;
     position: relative;
-    width: 8px;
+    width: 16px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
@@ -358,11 +358,11 @@ header>ul {
     border: 2px solid var(--text-color);
     content: " ";
     display: block;
-    height: 12px;
+    height: 20px;
     left: -4px;
     position: absolute;
     top: -4px;
-    width: 12px;
+    width: 20px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
