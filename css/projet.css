@@ -239,10 +239,13 @@ header>ul {
 
 #linkTitle{
     margin-top: 4vh;
+    font-size: 1.75vw;
 }
 
 #link{
     margin-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .linkDescription{
@@ -253,9 +256,13 @@ header>ul {
 
 .linkURL{
     color: var(--text-color);
-    text-decoration: none;
     font-size: 1.1rem;
     transition: color 250ms ease-in-out;
+    font-size: 1.1vw;
+}
+
+#link .linkURL:not(:first-child){
+    margin-top: 0.75rem;
 }
 
 .linkDescription:hover, .linkURL:hover{

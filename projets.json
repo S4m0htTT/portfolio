@@ -8,20 +8,20 @@
                     "1": "./img/projets/iutEiffel/logo.svg"
                 }
             ],
-            "url": "https://github.com/Glenn-Guillard-MMI/SAE203",
+            "url": "<a class='linkURL' href='https://github.com/Glenn-Guillard-MMI/SAE203' target='_blank'>GitHub du site</a>",
             "languages": "HTML, CSS, JavaScript, PHP, SQl"
         }
     ],
     "Sushi Taimu": [
         {
             "name": "Sushi Taimu",
-            "description": "<a class='linkDescription' href='https://github.com/S4m0htTT/Sushi-Taimu-Admin' target='_blank'>GitHub de la partie Admin</a>",
+            "description": "ds",
             "img": [
                 {
                     "1": "./img/projets/sushiTaimu/logo.svg"
                 }
             ],
-            "url": "https://github.com/Glenn-Guillard-MMI/Sushi-Taimu",
+            "url": "<a class='linkURL' href='https://github.com/Glenn-Guillard-MMI/Sushi-Taimu' target='_blank'>GitHub du site</a><a class='linkURL' href='https://github.com/S4m0htTT/Sushi-Taimu-Admin' target='_blank'>GitHub de la partie Admin</a>",
             "languages": "HTML, CSS, JavaScript, Angular, NodeJS, SQL, PHP"
         }
     ],
@@ -31,11 +31,14 @@
             "description": "hglksm,hisk,gkjolgkr",
             "img": [
                 {
-                    "1": "./img/projets/doulenne/logo.svg"
+                    "1": "./img/projets/doulenne/logo.svg",
+                    "2" : "./img/projets/doulenne/prestations.png",
+                    "3" : "./img/projets/doulenne/adminAccueil.png",
+                    "4" : "./img/projets/doulenne/adminTab.png"
                 }
             ],
-            "url": "https://prestations.doulenne.fr/",
-            "languages": "HTML, CSS, JavaScript, PHP"
+            "url": "<a class='linkURL' href='https://prestations.doulenne.fr/' target='_blank'>Lien du site</a>",
+            "languages": "HTML, CSS, JavaScript, PHP, SQL"
         }
     ],
     "Carte de la Culture": [
@@ -50,7 +53,7 @@
                     "4": "./img/projets/carteCulture/modele3d.png"
                 }
             ],
-            "url": "<a class='linkURL' href='http://3d-projet.glenn-guillard.fr/' target='_blank'>Carte de la culture</a>",
+            "url": "<a class='linkURL' href='http://3d-projet.glenn-guillard.fr/' target='_blank'>Lien du site</a><a class='linkURL' href='https://sketchfab.com/3d-models/moai-ed619518c7be4a7ab3a59781505813a3' target='_blank'>Sketchfab du modèle 3D</a>",
             "languages": "HTML, CSS, JavaScript, Blender"
         }
     ],
@@ -76,7 +79,7 @@
                     "1": "./img/projets/xspace/logo.svg"
                 }
             ],
-            "url": "",
+            "url": "<a class='linkURL' href='https://guillard.alwaysdata.net/ACF2L/' target='_blank'>Lien du site</a>",
             "languages": "HTML, CSS, JavaScript"
         }
     ],
@@ -96,14 +99,14 @@
     "ACDC": [
         {
             "name": "ACDC",
-            "description": "hglksm,hisk,gkjolgkr",
+            "description": "Mon premier projet universitaire sur la création de site web. Ce site a pour but de faire découvrir le groupe de musique ACDC à travers plusieurs pages. Une page pour préesnter le groupe et une autre avec la discographie du groupe.",
             "img": [
                 {
                     "1": "./img/projets/ACDC/logo.svg"
                 }
             ],
             "url": "",
-            "languages": "HTML, CSS, JavaScript"
+            "languages": "HTML, CSS"
         }
     ],
     "L'Imprimerie": [
