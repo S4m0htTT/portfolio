@@ -158,8 +158,14 @@ let textLoader = document.getElementById('textLoader');
 document.body.style.overflow = 'hidden';
 
 document.addEventListener('DOMContentLoaded', _ => {
+    if (!localStorage.getItem('loading')) {
+        window.localStorage.setItem('loading', JSON.stringify({ value : "loadTime", timestamp : new Date().getTime()-60*60*1000}));
+    }
+    let load = JSON.parse(localStorage.getItem('loading')),
+    now = new Date().getTime(),
+    dateString = load.timestamp;
     if (window.innerWidth > 1024) {
-        if (document.cookie == '') {
+        if (dateString+30*60*1000 < now) {
             setTimeout(_ => {
                 textLoader.style.animation = 'none';
                 textLoader.style.opacity = '0';
@@ -167,7 +173,9 @@ document.addEventListener('DOMContentLoaded', _ => {
                 setTimeout(_ => {
                     loader.style.display = 'none';
                     document.body.style.overflow = 'auto';
-                    document.cookie = 'loading';
+                    localStorage.setItem('loading', "loading");
+                    let obj = { value : "loadTime", timestamp : new Date().getTime()};
+                    window.localStorage.setItem("loading", JSON.stringify(obj));
                 }, 1000)
             }, 3000);
         } else {
