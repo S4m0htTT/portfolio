@@ -2,20 +2,20 @@
     "IUT Eiffel": [
         {
             "name": "Eiffel",
-            "description": "nvjsgvljsnlsjgisiglsngisjr,nigkjrsiglkrs",
+            "description": "Ce site est un projet universitaire de groupe réalisé en fin de première année de BUT MMI. Il s'agit d'un site de réservation de matériel pour l'IUT. Si l'utilisateur n'a pas de compte administrateur, il peut consulter le matériel disponible et le réserver. Un utilisateur avec un compte administrateur dispose des mêmes fonctionnalités, avec en plus la possibilité d'ajouter et de supprimer du matériel, ainsi que d'approuver ou de rejeter les demandes de prêt.",
             "img": [
                 {
                     "1": "./img/projets/iutEiffel/logo.svg"
                 }
             ],
             "url": "<a class='linkURL' href='https://github.com/Glenn-Guillard-MMI/SAE203' target='_blank'>GitHub du site</a>",
-            "languages": "HTML, CSS, JavaScript, PHP, SQl"
+            "languages": "HTML, CSS, JavaScript, PHP, SQL"
         }
     ],
     "Sushi Taimu": [
         {
             "name": "Sushi Taimu",
-            "description": "ds",
+            "description": "Ce site est un projet universitaire de groupe réalisé en seconde année de BUT MMI. Le projet a été développé avec Angular pour le site web, NodeJS pour l'API, et PHP pour la partie administrateur. Mon rôle durant ce projet était de créer l'intégralité du front-end (Angular) ainsi que la partie admin du site (PHP).",
             "img": [
                 {
                     "1": "./img/projets/sushiTaimu/logo.svg"
@@ -28,7 +28,7 @@
     "Doulenne": [
         {
             "name": "Doulenne",
-            "description": "hglksm,hisk,gkjolgkr",
+            "description": " Ce site a été réalisé durant mon stage de fin de seconde année de BUT MMI. Il a pour but de présenter l'entreprise ainsi que ses tarifs. Une section d'administration permet de gérer les tarifs affichés sur le site, avec la possibilité de les modifier, de les supprimer et d'en ajouter de nouveaux.",
             "img": [
                 {
                     "1": "./img/projets/doulenne/logo.svg",
@@ -44,7 +44,7 @@
     "Carte de la Culture": [
         {
             "name": "Carte de la Culture",
-            "description": "hglksm,hisk,gkjolgkr",
+            "description": "Ce site est un projet universitaire de groupe réalisé en fin de seconde année de BUT MMI. Il a pour objectif de faire découvrir la culture d'un pays. Mon binôme et moi avons choisi les moai de l'île de Pâques. Les consignes pour la page incluaient l'intégration d'un modèle 3D ainsi qu'un texte décrivant cette culture. Avec les autres membres de la classe, nous avons décidé de regrouper toutes les pages des groupes pour créer un site commun.",
             "img": [
                 {
                     "1": "./img/projets/carteCulture/logo.svg",
@@ -60,7 +60,7 @@
     "Formul'UT": [
         {
             "name": "Formul'UT",
-            "description": "hglksm,hisk,gkjolgkr",
+            "description": "Ce site est un projet universitaire de groupe réalisé au début de la seconde année de BUT MMI. Il s'agit d'un webdocumentaire sur l'association Formul'UT, une association de l'UTC (Université de Technologie de Compiègne). Cette association a pour objectif de concevoir un monoplace de A à Z pour participer au championnat de la Formula Student, une compétition regroupant plusieurs associations à travers le monde. Le site contient des photos, des vidéos et un modèle 3D de leur monoplace.",
             "img": [
                 {
                     "1": "./img/projets/formulUT/logo.svg"
@@ -73,33 +73,41 @@
     "XSpace": [
         {
             "name": "XSpace",
-            "description": "hglksm,hisk,gkjolgkr",
+            "description": "Ce site est un projet universitaire de groupe réalisé en fin de première année de BUT MMI. Il s'agit d'un site vitrine pour une entreprise fictive. Avec les membres du groupe, nous avons créé un logo, choisi l'activité de l'entreprise, et réalisé des affiches.",
             "img": [
                 {
                     "1": "./img/projets/xspace/logo.svg"
                 }
             ],
-            "url": "<a class='linkURL' href='https://guillard.alwaysdata.net/ACF2L/' target='_blank'>Lien du site</a>",
+            "url": "",
             "languages": "HTML, CSS, JavaScript"
         }
     ],
     "ACF2L": [
         {
             "name": "ACF2L",
-            "description": "hglksm,hisk,gkjolgkr",
+            "description": "Ce site est un projet universitaire de groupe réalisé au début de la seconde année de BUT MMI. Il s'agit d'un site de réservation pour une association qui est un aéroclub. Le site comprend une partie admin permettant de gérer toutes les informations du site : les tarifs des différents types de réservation, les membres de l'association, les informations sur les événements, les avis clients et la galerie photo présente en bas du site.",
             "img": [
                 {
-                    "1": "./img/projets/ACF2L/logo.svg"
+                    "1": "./img/projets/ACF2L/logo.svg",
+                    "2" : "./img/projets/ACF2L/accueil.png",
+                    "3" : "./img/projets/ACF2L/APIMeteo.png",
+                    "4" : "./img/projets/ACF2L/offres.png",
+                    "5" : "./img/projets/ACF2L/admin.png",
+                    "6" : "./img/projets/ACF2L/gestionUtil.png",
+                    "7" : "./img/projets/ACF2L/gestionReserv.png",
+                    "8" : "./img/projets/ACF2L/gestionOffres.png",
+                    "9" : "./img/projets/ACF2L/adherantResev.png"
                 }
             ],
-            "url": "",
+            "url": "<a class='linkURL' href='https://guillard.alwaysdata.net/ACF2L/' target='_blank'>Lien du site</a><a class='linkURL' href='https://github.com/Glenn-Guillard-MMI/SAE303' target='_blank'>Lien du GitHub</a>",
             "languages": "HTML, CSS, JavaScript, PHP, SQL"
         }
     ],
     "ACDC": [
         {
             "name": "ACDC",
-            "description": "Mon premier projet universitaire sur la création de site web. Ce site a pour but de faire découvrir le groupe de musique ACDC à travers plusieurs pages. Une page pour préesnter le groupe et une autre avec la discographie du groupe.",
+            "description": "Il s'agit de mon premier projet universitaire de création de site web. Ce site a pour but de faire découvrir le groupe de musique AC/DC à travers plusieurs pages. Une page présente le groupe et une autre sa discographie.",
             "img": [
                 {
                     "1": "./img/projets/ACDC/logo.svg"
