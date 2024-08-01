@@ -357,8 +357,7 @@ h3 {
     border-color: var(--text-color);
 }
 
-#acdc,
-#xspace {
+#acdc {
     background: var(--background);
 }
 
@@ -423,13 +422,11 @@ h3 {
     text-align: center;
 }
 
-#doulenne:hover::before,
-#xspace:hover::before {
+#doulenne:hover::before {
     opacity: 1;
 }
 
-#doulenne::before,
-#xspace::before {
+#doulenne::before {
     content: 'Site web vitrine';
     position: absolute;
     z-index: 90;
