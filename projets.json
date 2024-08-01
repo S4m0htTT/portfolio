@@ -70,19 +70,6 @@
             "languages": "HTML, CSS, JavaScript"
         }
     ],
-    "XSpace": [
-        {
-            "name": "XSpace",
-            "description": "Ce site est un projet universitaire de groupe réalisé en fin de première année de BUT MMI. Il s'agit d'un site vitrine pour une entreprise fictive. Avec les membres du groupe, nous avons créé un logo, choisi l'activité de l'entreprise, et réalisé des affiches.",
-            "img": [
-                {
-                    "1": "./img/projets/xspace/logo.svg"
-                }
-            ],
-            "url": "",
-            "languages": "HTML, CSS, JavaScript"
-        }
-    ],
     "ACF2L": [
         {
             "name": "ACF2L",
