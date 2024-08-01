@@ -613,7 +613,7 @@ footer a p {
     width: 100%;
     padding: 1.5rem 0;
     justify-content: end;
-    background: linear-gradient(180deg, rgba(20, 22, 24, 1) 0%, rgba(20, 22, 24, 0) 100%);
+    background: linear-gradient(180deg, rgba(20, 22, 24, 1) 10%, rgba(20, 22, 24, 0) 100%);
 }
 
 #headerTel>img {
