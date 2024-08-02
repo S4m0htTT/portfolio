@@ -473,12 +473,20 @@ header>ul {
         font-size: 2.5vw;
         margin-left: 1.25vw;
     }
+
+    #controls {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .linkURL {
         font-size: 2vw;
     }
+
     #wrapper {
         height: 25rem;
     }
@@ -535,7 +543,7 @@ header>ul {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     #wrapper {
         height: 17rem;
     }
@@ -562,11 +570,26 @@ header>ul {
     #wrapper {
         height: 15rem;
     }
+
+    .nav-btn-tel {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 450px) {
     #wrapper {
         height: 12.5rem;
+    }
+
+    #controls label:after{
+        width: 16px;
+        height: 16px;
+    }
+
+    #controls label{
+        width: 12px;
+        height: 12px;
+        margin: 25px 12px 0 12px;
     }
 }
 
@@ -588,14 +611,24 @@ header>ul {
         font-size: 3.75vw;
     }
 
-    #controls {
-        width: 75%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     #wrapper {
         height: 11rem;
+    }
+
+    #controls label:after{
+        width: 14px;
+        height: 14px;
+    }
+
+    #controls label{
+        width: 10px;
+        height: 10px;
+        margin: 25px 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #wrapper{
+        height: 9.5rem;
     }
 }
