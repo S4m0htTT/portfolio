@@ -200,61 +200,62 @@ header>ul {
     width: 1vw;
 }
 
-#sub-container{
+#sub-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: var(--text-color);
 }
 
-#sub-container-info, #sub-container-img{
+#sub-container-info,
+#sub-container-img {
     width: 45%;
 }
 
-#sub-container-img{
+#sub-container-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#sub-container-info{
+#sub-container-info {
     margin-top: 5vh;
 }
 
-#projetTitle{
+#projetTitle {
     font-size: 3vw;
 }
 
-#description{
+#description {
     text-align: justify;
     margin-top: 2vh;
     font-size: 1.25rem;
 }
 
-#language{
+#language {
     font-weight: 700;
     font-size: 1.5rem;
     margin-top: 2vh;
 }
 
-#linkTitle{
+#linkTitle {
     margin-top: 4vh;
     font-size: 1.75vw;
 }
 
-#link{
+#link {
     margin-top: 1.5vh;
     display: flex;
     flex-direction: column;
 }
 
-.linkDescription{
+.linkDescription {
     text-decoration: underline;
     color: var(--text-color);
     transition: color 250ms ease-in-out;
 }
 
-.linkURL{
+.linkURL {
     color: var(--text-color);
     font-size: 1.1rem;
     transition: color 250ms ease-in-out;
@@ -262,13 +263,15 @@ header>ul {
     width: fit-content;
 }
 
-#link .linkURL:not(:first-child){
+#link .linkURL:not(:first-child) {
     margin-top: 0.75rem;
 }
 
-.linkDescription:hover, .linkURL:hover{
+.linkDescription:hover,
+.linkURL:hover {
     color: #746e6e;
 }
+
 /*INFO PROJET*/
 
 /*SLIDER*/
@@ -385,7 +388,7 @@ header>ul {
 #slide12:checked~#controls label:nth-of-type(12),
 #slide13:checked~#controls label:nth-of-type(13),
 #slide14:checked~#controls label:nth-of-type(14),
-#slide15:checked~#controls label:nth-of-type(15){
+#slide15:checked~#controls label:nth-of-type(15) {
     background: var(--text-color);
 }
 
@@ -429,3 +432,170 @@ header>ul {
 }
 
 /*SLIDER*/
+
+@media screen and (max-width: 1024px) {
+    #sub-container {
+        flex-direction: column;
+        padding: 2.5rem 0 7.5rem 0;
+    }
+
+    #sub-container-img,
+    #sub-container-info {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    #language {
+        font-size: 1.25rem;
+    }
+
+    #linkTitle {
+        font-size: 2.25vw;
+    }
+
+    .linkURL {
+        font-size: 1.5vw;
+    }
+
+    #container-info>span {
+        margin-left: 2.5vw;
+    }
+
+    #container-info>span img {
+        width: 1.5vw;
+    }
+
+    #container-info>span a {
+        font-size: 2.5vw;
+        margin-left: 1.25vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .linkURL {
+        font-size: 2vw;
+    }
+    #wrapper {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #linkTitle {
+        font-size: 3vw;
+    }
+
+    #projetTitle {
+        font-size: 3.5vw;
+    }
+
+    #wrapper {
+        height: 23.5rem;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #wrapper {
+        height: 21rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .linkURL {
+        font-size: 2.5vw;
+    }
+
+    #linkTitle {
+        font-size: 4vw;
+    }
+
+    #projetTitle {
+        font-size: 4.5vw;
+    }
+
+    #description,
+    #language {
+        font-size: 2.75vw;
+    }
+
+    #container-info>span img {
+        width: 2vw;
+    }
+
+    #container-info>span a {
+        font-size: 4vw;
+    }
+
+    #wrapper {
+        height: 19rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #wrapper {
+        height: 17rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .linkURL {
+        font-size: 3vw;
+    }
+
+    #linkTitle {
+        font-size: 5vw;
+    }
+
+    #projetTitle {
+        font-size: 5.5vw;
+    }
+
+    #description,
+    #language {
+        font-size: 3.25vw;
+    }
+
+    #wrapper {
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #wrapper {
+        height: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .linkURL {
+        font-size: 4vw;
+    }
+
+    #linkTitle {
+        font-size: 6vw;
+    }
+
+    #projetTitle {
+        font-size: 6.5vw;
+    }
+
+    #description,
+    #language {
+        font-size: 3.75vw;
+    }
+
+    #controls {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #wrapper {
+        height: 11rem;
+    }
+}
