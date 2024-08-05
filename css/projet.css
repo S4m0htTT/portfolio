@@ -606,6 +606,14 @@ header>ul {
 }
 
 @media screen and (max-width: 450px) {
+    #container-info>span a {
+        font-size: 6.5vw;
+    }
+
+    #container-info>span img{
+        width: 3vw;
+    }
+    
     #wrapper {
         height: 12.5rem;
     }
