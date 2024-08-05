@@ -73,7 +73,7 @@ readTextFile("./projets.json", function (text) {
         if (url != null) {
             document.getElementById('link').innerHTML = url
         }
-        if(url == ""){
+        if (url == "") {
             document.getElementById('linkTitle').style.display = 'none'
         }
         if (img != null) {
@@ -88,7 +88,7 @@ readTextFile("./projets.json", function (text) {
 
                 input.type = 'radio';
                 input.name = 'point';
-                input.id = 'slide'+i;
+                input.id = 'slide' + i;
                 if (input.id == 'slide1') {
                     input.checked = true;
                 }
@@ -104,11 +104,11 @@ readTextFile("./projets.json", function (text) {
                 div.style.backgroundPosition = 'center';
                 div.style.backgroundRepeat = 'no-repeat';
                 slider.appendChild(div);
-                
+
                 i++
             });
         }
-        if (langage!= null) {
+        if (langage != null) {
             document.getElementById('language').innerHTML = langage
         }
     }
@@ -130,8 +130,44 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('accueil').classList.add('select');
     }
 
-    let checkboxs = document.getElementsByTagName('label');
-    console.log(checkboxs);
+    setTimeout(_ => {
+        let inputs = document.getElementsByTagName('input');
+
+        for (let i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener('click', _ => {
+                clearInterval(slide);
+                slide = setInterval(_ => {
+                    for (let i = 0; i < inputs.length; i++) {
+                        if (inputs[i].checked) {
+                            inputs[i].checked = false;
+                            setTimeout(_ => {
+                                if (inputs[i + 1]) {
+                                    inputs[i + 1].checked = true;
+                                } else {
+                                    inputs[0].checked = true;
+                                }
+                            }, 100)
+                        }
+                    }
+                }, 5000)
+            })
+        }
+
+        var slide = setInterval(_ => {
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].checked) {
+                    inputs[i].checked = false;
+                    setTimeout(_ => {
+                        if (inputs[i + 1]) {
+                            inputs[i + 1].checked = true;
+                        } else {
+                            inputs[0].checked = true;
+                        }
+                    }, 100)
+                }
+            }
+        }, 5000)
+    }, 1000);
 });
 
 burgerMenu.addEventListener('click', _ => {

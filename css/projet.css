@@ -66,6 +66,7 @@ header {
     width: 100%;
     padding: 1.5rem 0;
     transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
+    background: linear-gradient(180deg, rgba(20, 22, 24, 1) 0%, rgba(20, 22, 24, 0) 100%);
 }
 
 header>ul {
