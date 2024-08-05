@@ -5,7 +5,14 @@
             "description": "Ce site est un projet universitaire de groupe réalisé en fin de première année de BUT MMI. Il s'agit d'un site de réservation de matériel pour l'IUT. Si l'utilisateur n'a pas de compte administrateur, il peut consulter le matériel disponible et le réserver. Un utilisateur avec un compte administrateur dispose des mêmes fonctionnalités, avec en plus la possibilité d'ajouter et de supprimer du matériel, ainsi que d'approuver ou de rejeter les demandes de prêt.",
             "img": [
                 {
-                    "1": "./img/projets/iutEiffel/logo.svg"
+                    "1": "./img/projets/iutEiffel/logo.svg",
+                    "2" : "./img/projets/iutEiffel/connexion.png",
+                    "3" : "./img/projets/iutEiffel/inscripion.png",
+                    "4" : "./img/projets/iutEiffel/accueilAdmin.png",
+                    "5" : "./img/projets/iutEiffel/choixmateriel.png",
+                    "6" : "./img/projets/iutEiffel/demande.png",
+                    "7" : "./img/projets/iutEiffel/validation.png",
+                    "8" : "./img/projets/iutEiffel/ajouMat.png"
                 }
             ],
             "url": "<a class='linkURL' href='https://github.com/Glenn-Guillard-MMI/SAE203' target='_blank'>GitHub du site</a>",
@@ -18,7 +25,19 @@
             "description": "Ce site est un projet universitaire de groupe réalisé en seconde année de BUT MMI. Le projet a été développé avec Angular pour le site web, NodeJS pour l'API, et PHP pour la partie administrateur. Mon rôle durant ce projet était de créer l'intégralité du front-end (Angular) ainsi que la partie admin du site (PHP).",
             "img": [
                 {
-                    "1": "./img/projets/sushiTaimu/logo.svg"
+                    "1": "./img/projets/sushiTaimu/logo.svg",
+                    "2" : "./img/projets/sushiTaimu/sushiTaimuAccueil.png",
+                    "3" : "./img/projets/sushiTaimu/menu.png",
+                    "4" : "./img/projets/sushiTaimu/choixProd.png",
+                    "5" : "./img/projets/sushiTaimu/panier.png",
+                    "6" : "./img/projets/sushiTaimu/sushiTaimuAdmin.png",
+                    "7" : "./img/projets/sushiTaimu/adminMenu.png",
+                    "8" : "./img/projets/sushiTaimu/commande.png",
+                    "9" : "./img/projets/sushiTaimu/contenuComm.png",
+                    "10" : "./img/projets/sushiTaimu/box.png",
+                    "11" : "./img/projets/sushiTaimu/modifBox.png",
+                    "12" : "./img/projets/sushiTaimu/boisson.png",
+                    "13" : "./img/projets/sushiTaimu/modifBoisson.png"
                 }
             ],
             "url": "<a class='linkURL' href='https://github.com/Glenn-Guillard-MMI/Sushi-Taimu' target='_blank'>GitHub du site</a><a class='linkURL' href='https://github.com/S4m0htTT/Sushi-Taimu-Admin' target='_blank'>GitHub de la partie Admin</a>",
@@ -63,10 +82,17 @@
             "description": "Ce site est un projet universitaire de groupe réalisé au début de la seconde année de BUT MMI. Il s'agit d'un webdocumentaire sur l'association Formul'UT, une association de l'UTC (Université de Technologie de Compiègne). Cette association a pour objectif de concevoir un monoplace de A à Z pour participer au championnat de la Formula Student, une compétition regroupant plusieurs associations à travers le monde. Le site contient des photos, des vidéos et un modèle 3D de leur monoplace.",
             "img": [
                 {
-                    "1": "./img/projets/formulUT/logo.svg"
+                    "1": "./img/projets/formulUT/logo.svg",
+                    "2" : "./img/projets/formulUT/acueil.png",
+                    "3" : "./img/projets/formulUT/presentation.png",
+                    "4" : "./img/projets/formulUT/son.png",
+                    "5" : "./img/projets/formulUT/info.png",
+                    "6" : "./img/projets/formulUT/video.png",
+                    "7" : "./img/projets/formulUT/3d.png",
+                    "8" : "./img/projets/formulUT/portrait.png"
                 }
             ],
-            "url": "",
+            "url": "<a class='linkURL' href='https://youtu.be/9bsCz5BehRo' target='_blank'>Lien de la vidéo n°1</a><a class='linkURL' href='https://youtu.be/SHW_quVZOqM' target='_blank'>Lien de la vidéo n°2</a><a class='linkURL' href='https://youtu.be/3q0K2LIm2vo' target='_blank'>Lien de la vidéo n°3</a>",
             "languages": "HTML, CSS, JavaScript"
         }
     ],
@@ -89,19 +115,6 @@
             ],
             "url": "<a class='linkURL' href='https://guillard.alwaysdata.net/ACF2L/' target='_blank'>Lien du site</a><a class='linkURL' href='https://github.com/Glenn-Guillard-MMI/SAE303' target='_blank'>Lien du GitHub</a>",
             "languages": "HTML, CSS, JavaScript, PHP, SQL"
-        }
-    ],
-    "ACDC": [
-        {
-            "name": "ACDC",
-            "description": "Il s'agit de mon premier projet universitaire de création de site web. Ce site a pour but de faire découvrir le groupe de musique AC/DC à travers plusieurs pages. Une page présente le groupe et une autre sa discographie.",
-            "img": [
-                {
-                    "1": "./img/projets/ACDC/logo.svg"
-                }
-            ],
-            "url": "",
-            "languages": "HTML, CSS"
         }
     ],
     "L'Imprimerie": [

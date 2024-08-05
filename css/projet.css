@@ -339,6 +339,10 @@ header>ul {
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #wrapper label {
@@ -543,6 +547,19 @@ header>ul {
     }
 }
 
+@media screen and (max-width: 650px) {
+    #controls label:after {
+        width: 16px;
+        height: 16px;
+    }
+
+    #controls label {
+        width: 12px;
+        height: 12px;
+        margin: 25px 12px 0 12px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #wrapper {
         height: 17rem;
@@ -574,6 +591,17 @@ header>ul {
     .nav-btn-tel {
         font-size: 3rem;
     }
+
+    #controls label:after {
+        width: 16px;
+        height: 16px;
+    }
+
+    #controls label {
+        width: 12px;
+        height: 12px;
+        margin: 25px 9px 0 9px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -589,7 +617,7 @@ header>ul {
     #controls label {
         width: 12px;
         height: 12px;
-        margin: 25px 12px 0 12px;
+        margin: 25px 8px 0 8px;
     }
 }
 
@@ -623,7 +651,20 @@ header>ul {
     #controls label {
         width: 10px;
         height: 10px;
-        margin: 25px 10px 0 10px;
+        margin: 25px 8px 0 8px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #controls label:after {
+        width: 12px;
+        height: 12px;
+    }
+
+    #controls label {
+        width: 8px;
+        height: 8px;
+        margin: 25px 6px 0 6px;
     }
 }
 

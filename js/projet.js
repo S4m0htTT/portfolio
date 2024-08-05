@@ -129,6 +129,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         document.getElementById('accueil').classList.add('select');
     }
+
+    let checkboxs = document.getElementsByTagName('label');
+    console.log(checkboxs);
 });
 
 burgerMenu.addEventListener('click', _ => {
