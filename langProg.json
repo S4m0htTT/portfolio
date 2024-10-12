@@ -1,66 +1,78 @@
 {
-    "Frontend": {
-        "html": [
-            {
-                "name": "HTML",
-                "img": "./img/logo/html.svg"
-            }
-        ],
-        "CSS": [
-            {
-                "name": "CSS",
-                "img": "./img/logo/css.svg"
-            }
-        ],
-        "JavaScript": [
-            {
-                "name": "JavaScript",
-                "img": "./img/logo/js.svg"
-            }
-        ],
-        "Angular": [
-            {
-                "name": "Angular",
-                "img": "./img/logo/angular.svg"
-            }
-        ],
-        "TypeScript": [
-            {
-                "name": "TypeScript",
-                "img": "./img/logo/ts.svg"
-            }
-        ]
-    },
-    "Backend": {
-        "PHP": [
-            {
-                "name": "PHP",
-                "img": "./img/logo/php.svg"
-            }
-        ],
-        "Python": [
-            {
-                "name": "Python",
-                "img": "./img/logo/python.svg"
-            }
-        ],
-        "SQL": [
-            {
-                "name": "SQL",
-                "img": "./img/logo/sql.svg"
-            }
-        ],
-        "Java": [
-            {
-                "name": "Java",
-                "img": "./img/logo/java.svg"
-            }
-        ],
-        "nodeJS": [
-            {
-                "name": "NodeJS",
-                "img": "./img/logo/nodejs.svg"
-            }
-        ]
-    }
+  "Frontend": {
+    "html": [
+      {
+        "name": "HTML",
+        "img": "./img/logo/html.svg"
+      }
+    ],
+    "CSS": [
+      {
+        "name": "CSS",
+        "img": "./img/logo/css.svg"
+      }
+    ],
+    "JavaScript": [
+      {
+        "name": "JavaScript",
+        "img": "./img/logo/js.svg"
+      }
+    ],
+    "Angular": [
+      {
+        "name": "Angular",
+        "img": "./img/logo/angular.svg"
+      }
+    ],
+    "TypeScript": [
+      {
+        "name": "TypeScript",
+        "img": "./img/logo/ts.svg"
+      }
+    ],
+    "React": [
+      {
+        "name": "React",
+        "img": "./img/logo/react.svg"
+      }
+    ],
+    "NextJS": [
+      {
+        "name": "NextJS",
+        "img": "./img/logo/nextjs.svg"
+      }
+    ]
+  },
+  "Backend": {
+    "PHP": [
+      {
+        "name": "PHP",
+        "img": "./img/logo/php.svg"
+      }
+    ],
+    "Python": [
+      {
+        "name": "Python",
+        "img": "./img/logo/python.svg"
+      }
+    ],
+    "SQL": [
+      {
+        "name": "SQL",
+        "img": "./img/logo/sql.svg"
+      }
+    ],
+    "Java": [
+      {
+        "name": "Java",
+        "img": "./img/logo/java.svg"
+      }
+    ],
+    "nodeJS": [
+      {
+        "name": "NodeJS",
+        "img": "./img/logo/nodejs.svg"
+      }
+    ]
+  }
 }
